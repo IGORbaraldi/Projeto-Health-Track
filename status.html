@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/dashboard.css">
+
+    <title>Menu!</title>
+</head>
+
+<body>
+
+    <body class="bg-warning">
+
+        <nav class="navbar navbar-expand-lg fixed-top shadow navbar-dark navbar-offcanvas"
+            style="background-color: #f88b32;">
+            <a class="navbar-brand mr-auto" href="/dashboard.html">Health Track</a>
+            
+                
+            
+            
+
+            <button class="navbar-toggler d-block" type="button" id="navToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="........"> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <img src="/imagens/home.svg" alt="inicio">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/treino.html">
+                            <img src="/imagens/fitness_center-black-18dp.svg" alt="">
+                            <span>Treino</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dieta.html">
+                            <img src="/imagens/spoon-knife.svg" alt="dieta">
+                            <span>Dieta</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="status.html">
+                            <img src="/imagens/account_circle-black-18dp.svg" alt="Perfil">
+                            <span>Perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <img src="/imagens/exit.svg" alt="sair">
+                            <span>Sair</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+
+        <div class="row container">
+
+            <div class="col-md-12 att">
+                <h3>Perfil</h3>
+            </div>
+
+        </div>
+
+        <div class="perfil">
+            <div class="card" style="width: 18rem;">
+                <img src="/imagens/cra.png" class="card-img-top" alt="...">
+            </div>
+        </div>
+
+            
+    
+            <div class="container">
+                <form class="edit-exercicio" action="" method="POST" name="data-editar-exercicio">
+                    <div class="form-group data-exercicio">
+                        <label for="data-exercicio">Nome</label>
+                        <input type="text" name="nome-perfil" class="form-control" id="nome-perfil" value="Igor Baraldi">
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-refeiçao">Gênero</label>
+                        <select class="form-control" id="genero-perfil">
+                            <option>Selecione</option>
+                            <option value="Café da manhã" selected>Feminino</option>
+                            <option value="Almoço" selected>Masculino</option>
+
+                        </select>
+    
+                    </div>
+                    <div class="form-group alimento">
+                        <label for="tipo-exercicio">Peso(kg)</label>
+                        <input type="text" name="peso" id="peso-atual" class="form-control" value= "70" >
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-exercicio">Altura(cm)</label>
+                        <input type="text" name="altura-perfil" id="altura-perfil" class="form-control" value= "180" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo-exercicio">Idade</label>
+                        <input type="text" name="idade" id="idade" class="form-control" value="17"  >
+                    </div>
+
+
+
+                </form>
+    
+                <div class="col-md-12 text-center botao-refeiçao">
+                    <a href="...">
+                        <button type="submit" class=" btn">Salvar</button>
+                    </a>
+                    
+                </div>
+                
+            </div>
+    
+    
+        
+
+       
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+                console.log("document is ready");
+                $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
+                    $('.offcanvas-collapse').toggleClass('open')
+                })
+            });
+            window.onload = function () {
+                console.log("window is loaded");
+            };
+        </script>
+    </body>
+
+</html>
